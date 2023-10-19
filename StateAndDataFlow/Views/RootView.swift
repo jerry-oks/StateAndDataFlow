@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct RootView: View {
-    @StateObject private var userManager = UserManager()
+    @StateObject private var storageManager = StorageManager.shared
+    @StateObject private var userManager = UserManager(
+        user: StorageManager.shared.getUser()
+    )
     
     var body: some View {
         Group {
-            if userManager.isLoggedIn {
+            if userManager.user.isLoggedIn {
                 ContentView()
             } else {
                 LoginView()
             }
         }
         .environmentObject(userManager)
+        .environmentObject(storageManager)
     }
 }
 

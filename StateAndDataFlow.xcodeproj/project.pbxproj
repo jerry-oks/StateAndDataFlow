@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B847CFB2AE1B61B00F60739 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B847CFA2AE1B61A00F60739 /* User.swift */; };
+		3B847CFD2AE1B67100F60739 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B847CFC2AE1B67100F60739 /* StorageManager.swift */; };
 		A870D5632AE0555B000D10A8 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870D5622AE0555B000D10A8 /* TimeCounter.swift */; };
 		A870D5652AE05AE8000D10A8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870D5642AE05AE8000D10A8 /* LoginView.swift */; };
 		A870D5672AE05BB1000D10A8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A870D5662AE05BB1000D10A8 /* UserManager.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B847CFA2AE1B61A00F60739 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B847CFC2AE1B67100F60739 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		A870D5622AE0555B000D10A8 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		A870D5642AE05AE8000D10A8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A870D5662AE05BB1000D10A8 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A870D5662AE05BB1000D10A8 /* UserManager.swift */,
+				3B847CFC2AE1B67100F60739 /* StorageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -72,6 +77,14 @@
 				A87E266E2AE0106F006262D5 /* StateAndDataFlowApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		3B847CF92AE1B60700F60739 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B847CFA2AE1B61A00F60739 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A87E26622AE0106F006262D5 = {
@@ -93,6 +106,7 @@
 		A87E266D2AE0106F006262D5 /* StateAndDataFlow */ = {
 			isa = PBXGroup;
 			children = (
+				3B847CF92AE1B60700F60739 /* Models */,
 				3B847CF52AE1AE4D00F60739 /* App */,
 				3B847CF22AE1AD5F00F60739 /* Views */,
 				3B847CF32AE1AD6E00F60739 /* Classes */,
@@ -187,6 +201,8 @@
 				A870D5652AE05AE8000D10A8 /* LoginView.swift in Sources */,
 				A870D5672AE05BB1000D10A8 /* UserManager.swift in Sources */,
 				A87E266F2AE0106F006262D5 /* StateAndDataFlowApp.swift in Sources */,
+				3B847CFB2AE1B61B00F60739 /* User.swift in Sources */,
+				3B847CFD2AE1B67100F60739 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
