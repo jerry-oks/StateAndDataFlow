@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B847CF22AE1AD5F00F60739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A87E26702AE0106F006262D5 /* ContentView.swift */,
+				A870D5642AE05AE8000D10A8 /* LoginView.swift */,
+				A870D5682AE05CEF000D10A8 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B847CF32AE1AD6E00F60739 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A870D5622AE0555B000D10A8 /* TimeCounter.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3B847CF42AE1AD9300F60739 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A870D5662AE05BB1000D10A8 /* UserManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B847CF52AE1AE4D00F60739 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A87E266E2AE0106F006262D5 /* StateAndDataFlowApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A87E26622AE0106F006262D5 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +93,10 @@
 		A87E266D2AE0106F006262D5 /* StateAndDataFlow */ = {
 			isa = PBXGroup;
 			children = (
-				A87E266E2AE0106F006262D5 /* StateAndDataFlowApp.swift */,
-				A87E26702AE0106F006262D5 /* ContentView.swift */,
-				A870D5642AE05AE8000D10A8 /* LoginView.swift */,
-				A870D5682AE05CEF000D10A8 /* RootView.swift */,
-				A870D5622AE0555B000D10A8 /* TimeCounter.swift */,
-				A870D5662AE05BB1000D10A8 /* UserManager.swift */,
+				3B847CF52AE1AE4D00F60739 /* App */,
+				3B847CF22AE1AD5F00F60739 /* Views */,
+				3B847CF32AE1AD6E00F60739 /* Classes */,
+				3B847CF42AE1AD9300F60739 /* Services */,
 				A87E26722AE01070006262D5 /* Assets.xcassets */,
 				A87E26742AE01070006262D5 /* Preview Content */,
 			);
@@ -115,7 +147,7 @@
 				};
 			};
 			buildConfigurationList = A87E26662AE0106F006262D5 /* Build configuration list for PBXProject "StateAndDataFlow" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -285,10 +317,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StateAndDataFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = V9G337EK28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,8 +334,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.StateAndDataFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftbook.hw.StateAndDataFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -317,10 +351,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StateAndDataFlow/Preview Content\"";
-				DEVELOPMENT_TEAM = GBTTU32HS2;
+				DEVELOPMENT_TEAM = V9G337EK28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -333,8 +368,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.StateAndDataFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftbook.hw.StateAndDataFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
