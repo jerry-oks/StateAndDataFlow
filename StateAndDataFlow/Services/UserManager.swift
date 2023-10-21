@@ -8,7 +8,7 @@
 import SwiftUI
 
 final class UserManager: ObservableObject {
-    var user: User
+    @Published var user: User
     
     init(user: User) {
         self.user = user

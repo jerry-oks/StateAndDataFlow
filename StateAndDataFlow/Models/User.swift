@@ -7,12 +7,7 @@
 
 import Foundation
 
-final class User {
-    @Published var isLoggedIn = false
+struct User {
     var name: String
-    
-    init(name: String, isLoggedIn: Bool) {
-        self.name = name
-        self.isLoggedIn = isLoggedIn
-    }
+    var isLoggedIn = false
 }

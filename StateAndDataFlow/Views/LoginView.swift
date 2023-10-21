@@ -35,7 +35,8 @@ struct LoginView: View {
     
     private func login() {
         if userManager.nameIsValid(name) {
-            userManager.user = User(name: name, isLoggedIn: true)
+            userManager.user.name = name
+            userManager.user.isLoggedIn.toggle()
             storageManager.save(user: userManager.user)
         }
     }
